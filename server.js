@@ -22,7 +22,7 @@ wss.on('connection', ws => {
     console.log('📡 Sent:', data);
   };
 
-  const interval = setInterval(sendRandomData, 20000);
+  const interval = setInterval(sendRandomData, 30000);
 
   ws.on('close', () => {
     console.log('❌ Client disconnected');
